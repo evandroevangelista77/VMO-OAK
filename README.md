@@ -95,6 +95,7 @@ Ninguém ganha aprovação, validação, finanças ou configuração implicitame
 php tests/calc.php                                                             # cálculos da seção 5 (sem GLPI)
 sudo -u www-data env GLPI_ROOT=/var/www/glpi php tests/smoke.php               # regras de negócio (cenários CA01–CA13)
 sudo -u www-data env GLPI_ROOT=/var/www/glpi php tests/pages.php               # renderiza todas as telas (cria e remove uma iniciativa de teste)
+sudo -u www-data env GLPI_ROOT=/var/www/glpi php tests/escalation.php          # detecta as 10 situações do escalonamento (cria e remove dados de teste)
 ```
 
 Rodam no GLPI 11 e no 12 com o mesmo código (as classes de domínio não herdam do núcleo; só a base de direitos tem uma declaração por versão).
